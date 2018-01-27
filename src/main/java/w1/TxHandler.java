@@ -134,7 +134,7 @@ public class TxHandler {
 //                for(Transaction.Input input : inputs){
 //                    this.utxoPool.addUTXO(new UTXO(tx.getHash(), input.outputIndex), tx.getOutput(input.outputIndex));
 //                }
-                for(int i = 0 ; i < tx.numInputs() ; i++) this.utxoPool.addUTXO(new UTXO(tx.getHash(), i), tx.getOutput(i));
+                for(int i = 0 ; i < tx.numOutputs(); i++) this.utxoPool.addUTXO(new UTXO(tx.getHash(), i), tx.getOutput(i));
             }
         }
         return validTxs.toArray(new Transaction[0]);
