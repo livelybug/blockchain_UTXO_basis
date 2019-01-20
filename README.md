@@ -1,1 +1,2 @@
-# blockchain_coursera
+# blockchain_UTXO_basis
+coursera assignment
